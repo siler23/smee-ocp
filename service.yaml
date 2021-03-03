@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: smee-ocp
+spec:
+  selector: 
+    app: smee
+  type: ClusterIP
+  ports:
+    - name: smee
+      port: 8080
+      targetPort: 8080
